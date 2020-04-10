@@ -1,10 +1,10 @@
-resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "dedicated"
+resource aws_vpc "shree-new-vpc" {
+  cidr_block           = var.address_space
+  enable_dns_hostnames = true
 
   tags = {
-    Name = "main",
-    Billable = true,
+    name = "${var.prefix}-vpc2"
+    Billable = true
     Department = "devops"
   }
 }
