@@ -125,8 +125,12 @@ resource aws_instance "hashicat" {
   tags = {
     Name = "${var.prefix}-hashicat-instance",
     Billable = true,
+<<<<<<< HEAD
     Department = "devops"
     
+=======
+    Department = "devops"    
+>>>>>>> 9063db8845bee747421732948b601517039ca208
   }
 }
 
