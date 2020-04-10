@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./vpc"
+  source = "vpc"
 }
   
 resource aws_vpc "hashicat" {
